@@ -1,0 +1,81 @@
+/* ========= RESET Y BASE ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* ========= CONTENEDOR CON SNAP ========= */
+body {
+  scroll-snap-type: y mandatory;
+}
+
+/* ========= SLIDES A PANTALLA COMPLETA ========= */
+.slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ========= CABECERA (SOLO EN LA PRIMERA SLIDE) ========= */
+.header-slide {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header-subtitle {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* ========= ESTILO DE CADA PANTALLA ========= */
+.slide-content {
+  max-width: 600px;
+}
+
+.slide-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.slide-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.slide-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Opcional: fondos alternos de color suave */
+.slide:nth-child(odd):not(.header-slide) {
+  background: #1e293b;
+}
+
+.slide:nth-child(even):not(.header-slide) {
+  background: #0f172a;
+}
