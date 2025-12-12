@@ -179,3 +179,38 @@ body {
   box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
   transform: translateY(-1px);
 }
+
+/* ===== SELECTOR DE IDIOMA ===== */
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lang-switcher label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.lang-switcher select {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.lang-switcher select:hover {
+  border-color: #38bdf8;
+  background: rgba(15, 23, 42, 1);
+}
+
+.lang-switcher select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}

@@ -13,20 +13,31 @@
     <!-- SLIDE 0: CABECERA -->
     <section class="slide header-slide">
       <div class="header-content">
-        <h1 class="header-title">[Nombre de la doctoranda]</h1>
-        <p class="header-subtitle">
+
+        <!-- Selector de idioma -->
+        <div class="lang-switcher">
+          <label for="langSelect">Language</label>
+          <select id="langSelect">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
+
+        <h1 class="header-title" id="headerTitle">[Nombre de la doctoranda]</h1>
+        <p class="header-subtitle" id="headerSubtitle">
           Directores/as: [Director 1] · [Director 2]
         </p>
-        <p class="header-hint">Desliza hacia arriba para continuar</p>
+        <p class="header-hint" id="headerHint">Desliza hacia arriba para continuar</p>
       </div>
     </section>
 
     <!-- SLIDE 1 -->
     <section class="slide">
       <div class="slide-content">
-        <p class="slide-label">Parte 1</p>
-        <h2 class="slide-title">Introducción</h2>
-        <p class="slide-text">
+        <p class="slide-label" id="slide1Label">Parte 1</p>
+        <h2 class="slide-title" id="slide1Title">Introducción</h2>
+        <p class="slide-text" id="slide1Text">
           Aquí va el resumen simplificado de la introducción.
         </p>
       </div>
@@ -35,9 +46,9 @@
     <!-- SLIDE 2 -->
     <section class="slide">
       <div class="slide-content">
-        <p class="slide-label">Parte 2</p>
-        <h2 class="slide-title">Contexto del problema</h2>
-        <p class="slide-text">
+        <p class="slide-label" id="slide2Label">Parte 2</p>
+        <h2 class="slide-title" id="slide2Title">Contexto del problema</h2>
+        <p class="slide-text" id="slide2Text">
           Aquí va el resumen de la segunda parte de la presentación.
         </p>
       </div>
@@ -46,45 +57,46 @@
     <!-- SLIDE 3 -->
     <section class="slide">
       <div class="slide-content">
-        <p class="slide-label">Parte 3</p>
-        <h2 class="slide-title">Resultados</h2>
-        <p class="slide-text">
+        <p class="slide-label" id="slide3Label">Parte 3</p>
+        <h2 class="slide-title" id="slide3Title">Resultados</h2>
+        <p class="slide-text" id="slide3Text">
           Aquí puedes poner un resumen sencillo de los resultados principales.
         </p>
       </div>
     </section>
 
+    <!-- SLIDE FINAL: PREGUNTAS -->
     <section class="slide questions-slide">
       <div class="slide-content">
-        <p class="slide-label">Preguntas</p>
-        <h2 class="slide-title">¿Tienes alguna pregunta?</h2>
-        <p class="slide-text">
+        <p class="slide-label" id="questionsLabel">Preguntas</p>
+        <h2 class="slide-title" id="questionsTitle">¿Tienes alguna pregunta?</h2>
+        <p class="slide-text" id="questionsIntro">
           Puedes enviar aquí tus preguntas sobre la tesis.
           Se enviarán de forma automática por correo a la doctoranda.
         </p>
 
         <form id="questionsForm" class="questions-form">
           <div class="form-group">
-            <label for="nombre">Tu nombre (opcional)</label>
+            <label for="nombre" id="labelNombre">Tu nombre (opcional)</label>
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
           </div>
 
           <div class="form-group">
-            <label for="email">Tu correo (opcional)</label>
+            <label for="email" id="labelEmail">Tu correo</label>
             <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" />
           </div>
 
           <div class="form-group">
-            <label for="pregunta">Pregunta</label>
+            <label for="pregunta" id="labelPregunta">Pregunta</label>
             <textarea id="pregunta" name="pregunta" rows="4" required
               placeholder="Escribe aquí tu pregunta..."></textarea>
           </div>
 
-          <button type="submit" class="form-button">
+          <button type="submit" class="form-button" id="submitButton">
             Enviar pregunta
           </button>
 
-          <p class="slide-text" style="margin-top:0.6rem; font-size:0.85rem; opacity:0.7;">
+          <p class="slide-text" id="questionsNote" style="margin-top:0.6rem; font-size:0.85rem; opacity:0.7;">
             Tu pregunta se enviará de forma segura por correo a la doctoranda.
           </p>
         </form>
