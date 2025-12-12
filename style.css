@@ -1,38 +1,54 @@
-/* ========= RESET Y BASE ========= */
+/* ===== RESET Y BASE ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: system-ui, sans-serif;
   background: #0f172a;
   color: #f1f5f9;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  /* Muy importante: sin scroll normal */
 }
 
-/* ========= CONTENEDOR CON SNAP ========= */
-body {
-  scroll-snap-type: y mandatory;
+/* ===== CONTENEDOR QUE SE MUEVE ===== */
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* se ajustará también por JS */
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
 }
 
-/* ========= SLIDES A PANTALLA COMPLETA ========= */
+/* ===== CADA SLIDE: PANTALLA COMPLETA ===== */
 .slide {
+  min-height: 100vh;
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
 }
 
-/* ========= CABECERA (SOLO EN LA PRIMERA SLIDE) ========= */
+/* ===== CABECERA (SOLO PRIMERA) ===== */
 .header-slide {
   background: linear-gradient(135deg, #1e3a8a, #0f172a);
   text-align: center;
+}
+
+.header-content {
+  max-width: 600px;
 }
 
 .header-title {
@@ -43,10 +59,16 @@ body {
 .header-subtitle {
   margin-top: 0.7rem;
   font-size: 1rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
-/* ========= ESTILO DE CADA PANTALLA ========= */
+.header-hint {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ===== SLIDES DE CONTENIDO ===== */
 .slide-content {
   max-width: 600px;
 }
@@ -71,11 +93,26 @@ body {
   opacity: 0.9;
 }
 
-/* Opcional: fondos alternos de color suave */
+/* Fondos alternos para diferenciar secciones */
 .slide:nth-child(odd):not(.header-slide) {
   background: #1e293b;
 }
 
 .slide:nth-child(even):not(.header-slide) {
-  background: #0f172a;
+  background: #020617;
+}
+
+/* Un poco más de ajuste en pantallas grandes */
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 2.4rem;
+  }
+
+  .slide-title {
+    font-size: 2rem;
+  }
+
+  .slide-text {
+    font-size: 1.15rem;
+  }
 }
