@@ -54,7 +54,43 @@
       </div>
     </section>
 
-    <!-- Duplica <section class="slide"> ... </section> para más partes -->
+    <section class="slide questions-slide">
+      <div class="slide-content">
+        <p class="slide-label">Preguntas</p>
+        <h2 class="slide-title">¿Tienes alguna pregunta?</h2>
+        <p class="slide-text">
+          Puedes enviar aquí tus preguntas sobre la tesis.
+          Se enviarán de forma automática por correo a la doctoranda.
+        </p>
+
+        <form id="questionsForm" class="questions-form">
+          <div class="form-group">
+            <label for="nombre">Tu nombre (opcional)</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Tu correo (opcional)</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="pregunta">Pregunta</label>
+            <textarea id="pregunta" name="pregunta" rows="4" required
+              placeholder="Escribe aquí tu pregunta..."></textarea>
+          </div>
+
+          <button type="submit" class="form-button">
+            Enviar pregunta
+          </button>
+
+          <p class="slide-text" style="margin-top:0.6rem; font-size:0.85rem; opacity:0.7;">
+            Tu pregunta se enviará de forma segura por correo a la doctoranda.
+          </p>
+        </form>
+      </div>
+    </section>
+
   </div>
 
   <script src="script.js"></script>

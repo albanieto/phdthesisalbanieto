@@ -92,3 +92,49 @@ window.addEventListener(
   },
   { passive: true }
 );
+
+/* ===== FORMULARIO DE PREGUNTAS → GOOGLE APPS SCRIPT ===== */
+const questionsForm = document.getElementById("questionsForm");
+
+// 👉 Pega aquí la URL de tu despliegue de Apps Script
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyowyupx_sdnUPkFYWgACYfNDm9gebXEPHaB0KGAslX7c6HLW5RvMt0OIVugFYCix2nkg/exec";
+
+if (questionsForm) {
+  questionsForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const pregunta = document.getElementById("pregunta").value.trim();
+
+    if (!pregunta) {
+      alert("Por favor, escribe una pregunta antes de enviar.");
+      return;
+    }
+
+    const data = { nombre, email, pregunta };
+
+    try {
+      // Usamos no-cors para evitar líos de CORS.
+      await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      // Aunque no podamos leer la respuesta, asumimos que ha ido bien.
+      questionsForm.reset();
+      alert("¡Gracias! Tu pregunta se ha enviado correctamente.");
+
+    } catch (error) {
+      console.error(error);
+      alert(
+        "Ha ocurrido un problema al enviar la pregunta. " +
+        "Si persiste, puedes preguntar directamente a la doctoranda."
+      );
+    }
+  });
+}

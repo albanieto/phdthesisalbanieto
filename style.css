@@ -116,3 +116,66 @@ body {
     font-size: 1.15rem;
   }
 }
+
+/* ===== SLIDE FINAL DE PREGUNTAS ===== */
+.questions-slide {
+  background: #020617;
+}
+
+.questions-form {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #64748b;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+}
+
+.form-button {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #0f172a;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s ease;
+}
+
+.form-button:hover {
+  background: #0ea5e9;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
+  transform: translateY(-1px);
+}
