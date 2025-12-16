@@ -91,8 +91,8 @@ window.addEventListener(
  ****************************************************/
 const translations = {
   en: {
-    headerTitle: "Thesis Defense – [Name]",
-    headerSubtitle: "Supervisors: [Supervisor 1] · [Supervisor 2]",
+    headerTitle: "Demographic Inference in Structured Populations",
+    headerSubtitle: "Coupling sequential Markovian coalescent and Deep Learning",
     headerHint: "Swipe up to continue",
 
     slide1Label: "Part 1",

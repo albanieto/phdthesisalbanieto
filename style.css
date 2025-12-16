@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: 'Courier New', Courier, monospace, system-ui, sans-serif;
   background: #0f172a;
   color: #f1f5f9;
   overflow: hidden;
@@ -43,9 +43,20 @@ body {
 
 /* ===== CABECERA (SOLO PRIMERA) ===== */
 .header-slide {
-  background: linear-gradient(135deg, #1e3a8a, #0f172a);
-  text-align: center;
   position: relative;
+  text-align: center;
+
+  /* Imagen + degradado */
+  background-image:
+    linear-gradient(135deg,
+      rgba(106, 30, 138, 0.85),
+      rgba(15, 23, 42, 0.85)),
+    url("images/fondo.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
 
 .header-content {
@@ -225,4 +236,78 @@ body {
 .lang-flag.is-active {
   border-color: #38bdf8;
   background: rgba(15, 23, 42, 1);
+}
+
+/* ===== RECUADRO CENTRAL CON MARCO DE TESIS ===== */
+.thesis-frame {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 3 / 2;
+
+  background-image: url("images/marco.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  /* vuelve a center */
+  justify-content: center;
+
+  margin: 0 auto 1.2rem;
+
+  transform: translateY(-24px);
+  /* 👈 sube el marco completo (ajusta -10 a -40) */
+}
+
+.thesis-frame__content {
+  width: 80%;
+  max-width: 520px;
+  text-align: center;
+  color: #0f172a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.5rem 0;
+  /* 👈 aire vertical SIN desalinear el marco */
+}
+
+/* ===== TEXTO DENTRO DEL MARCO ===== */
+.thesis-title {
+  margin: 0;
+  font-size: 1.45rem;
+  /* 👈 baja un poco si hace falta */
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.thesis-author {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.thesis-supervisors {
+  margin: 0;
+  max-width: 100%;
+
+  font-size: 1.2rem;
+  line-height: 1.1;
+  opacity: 0.85;
+
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .thesis-frame {
+    max-width: 90%;
+  }
+
+  .thesis-title {
+    font-size: 1.4rem;
+  }
 }
