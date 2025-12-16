@@ -60,7 +60,11 @@ body {
 }
 
 .header-content {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  /* 👈 importante */
 }
 
 .header-title {
@@ -74,10 +78,24 @@ body {
   opacity: 0.85;
 }
 
+/* Texto de supervisión debajo del recuadro */
+.supervisors-below {
+  margin-top: -4rem;
+  /* 👈 aire respecto al recuadro */
+  font-size: clamp(0.95rem, 3.6vw, 1.15rem);
+  line-height: 1.25;
+
+  color: #f1f5f9;
+  opacity: 0.95;
+  text-align: center;
+}
+
+/* Hint de swipe */
 .header-hint {
-  margin-top: 1.5rem;
-  font-size: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
   opacity: 0.7;
+  text-align: center;
 }
 
 /* ===== SLIDES DE CONTENIDO ===== */
@@ -240,7 +258,7 @@ body {
 
 /* ===== RECUADRO CENTRAL CON MARCO DE TESIS ===== */
 .thesis-frame {
-  width: min(92vw, 760px);
+  width: min(96vw, 760px);
   /* 👈 en móvil casi todo el ancho */
   aspect-ratio: 3 / 2.5;
   background-image: url("images/marco_letra.PNG");
@@ -252,35 +270,11 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin: 0 auto 1rem;
-
-  transform: translateY(-10px);
+  margin: 0 auto;
+  transform: translateY(-20px);
+  /* sube más */
 }
 
-.thesis-frame__content {
-  width: 78%;
-  /* más ancho dentro del marco */
-  text-align: center;
-  color: #0f172a;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-
-  padding: 0.25rem 0;
-}
-
-/* ===== TEXTO DENTRO DEL MARCO ===== */
-.thesis-title {
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.15;
-
-  /* 👇 título un poco más pequeño */
-  font-size: clamp(0.85rem, 2.5vw, 1.25rem);
-  text-wrap: balance;
-}
 
 .thesis-author {
   font-size: 1.1rem;
@@ -288,22 +282,6 @@ body {
   margin-bottom: 0.4rem;
 }
 
-.thesis-supervisors {
-  margin: 0;
-  max-width: 100%;
-  opacity: 0.9;
-  line-height: 1.18;
-
-  /* 👇 subtítulo claramente más grande */
-  font-size: clamp(0.95rem, 3.5vw, 1.20rem);
-  text-wrap: balance;
-  overflow-wrap: anywhere;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 
 @media (max-width: 480px) {
   .thesis-frame {

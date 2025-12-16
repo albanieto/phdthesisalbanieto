@@ -118,8 +118,8 @@ const translations = {
   },
 
   es: {
-    headerTitle: "Defensa de tesis – [Nombre]",
-    headerSubtitle: "Directores/as: [Director 1] · [Director 2]",
+    headerTitle: "",
+    headerSubtitle: "",
     headerHint: "Desliza hacia arriba para continuar",
 
     slide1Label: "Parte 1",
@@ -146,8 +146,8 @@ const translations = {
   },
 
   fr: {
-    headerTitle: "Soutenance de thèse – [Nom]",
-    headerSubtitle: "Directeurs/trices : [Directeur 1] · [Directeur 2]",
+    headerTitle: "",
+    headerSubtitle: "",
     headerHint: "Glissez vers le haut pour continuer",
 
     slide1Label: "Partie 1",
