@@ -117,13 +117,39 @@ body {
   opacity: 0.9;
 }
 
-/* Fondos alternos para diferenciar secciones */
-.slide:nth-child(odd):not(.header-slide) {
-  background: #1e293b;
+/* ===== SLIDES DE CONTENIDO (CON MARCO) ===== */
+.slide:not(.header-slide) {
+  position: relative;
+  background-color: #3b0a5f;
+  /* mismo lila que la cabecera */
+  overflow: hidden;
 }
 
-.slide:nth-child(even):not(.header-slide) {
-  background: #020617;
+.slide:not(.header-slide)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("images/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  image-rendering: pixelated;
+
+  z-index: 0;
+}
+
+.slide:not(.header-slide) .slide-content {
+  position: relative;
+  z-index: 1;
+
+  background-color: #3b0a5f;
+
+  /* 👇 más aire arriba y abajo */
+  padding: 20rem 1.6rem;
+
+  border-radius: 0.2rem;
 }
 
 /* Un poco más de ajuste en pantallas grandes */
