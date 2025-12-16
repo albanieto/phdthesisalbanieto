@@ -76,7 +76,7 @@ body {
 
 .header-hint {
   margin-top: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0.7;
 }
 
@@ -240,8 +240,8 @@ body {
 
 /* ===== RECUADRO CENTRAL CON MARCO DE TESIS ===== */
 .thesis-frame {
-  width: 100%;
-  max-width: 720px;
+  width: min(92vw, 760px);
+  /* 👈 en móvil casi todo el ancho */
   aspect-ratio: 3 / 2;
 
   background-image: url("images/marco.png");
@@ -251,36 +251,36 @@ body {
 
   display: flex;
   align-items: center;
-  /* vuelve a center */
   justify-content: center;
 
-  margin: 0 auto 1.2rem;
+  margin: 0 auto 1rem;
 
-  transform: translateY(-24px);
-  /* 👈 sube el marco completo (ajusta -10 a -40) */
+  transform: translateY(-10px);
+  /* más suave para móvil */
 }
 
 .thesis-frame__content {
-  width: 80%;
-  max-width: 520px;
+  width: 78%;
+  /* más ancho dentro del marco */
   text-align: center;
   color: #0f172a;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.35rem;
 
-  padding: 0.5rem 0;
-  /* 👈 aire vertical SIN desalinear el marco */
+  padding: 0.25rem 0;
 }
 
 /* ===== TEXTO DENTRO DEL MARCO ===== */
 .thesis-title {
   margin: 0;
-  font-size: 1.45rem;
-  /* 👈 baja un poco si hace falta */
-  line-height: 1.15;
+  font-weight: 700;
+  line-height: 1.12;
+
+  /* 👇 fluido: móvil pequeño -> desktop */
+  font-size: clamp(1.05rem, 4.2vw, 1.55rem);
   text-wrap: balance;
 }
 
@@ -293,13 +293,19 @@ body {
 .thesis-supervisors {
   margin: 0;
   max-width: 100%;
-
-  font-size: 1.2rem;
-  line-height: 1.1;
   opacity: 0.85;
+  line-height: 1.12;
 
+  font-size: clamp(0.70rem, 2.7vw, 0.90rem);
   text-wrap: balance;
   overflow-wrap: anywhere;
+
+  /* opcional pero recomendado: no dejes que se coma el marco */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* hasta 3 líneas en móvil */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (max-width: 480px) {
@@ -309,5 +315,16 @@ body {
 
   .thesis-title {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .thesis-frame {
+    width: 96vw;
+    transform: translateY(-4px);
+  }
+
+  .thesis-frame__content {
+    width: 82%;
   }
 }
