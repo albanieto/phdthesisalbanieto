@@ -124,7 +124,7 @@ const translations = {
 
     slide1Label: "Parte 1",
     slide1Title: "Introducción",
-    slide1Text: "Aquí va el resumen simplificado de la introducción.",
+    slide1Text: "La genética de poblaciones estudia cómo y por qué las poblaciones tienen hoy las características genéticas que observamos. Para ello analiza el ADN de distintos individuos y utiliza modelos estadísticos para reconstruir lo que ocurrió en el pasado: cambios en el tamaño de la población, migraciones, aislamiento o eventos evolutivos importantes. Cada individuo contiene dos copias de su ADN, heredadas de sus progenitores.Las pequeñas diferencias entre estas secuencias son las pistas que permiten inferir la historia evolutiva de una población.La teoría de la coalescencia describe esta historia como un árbol genealógico que conecta a los individuos con ancestros comunes. Debido a la recombinación, distintas regiones del ADN pueden tener historias diferentes, por lo que un solo genoma contiene información fragmentada sobre todo el pasado evolutivo de la población.El objetivo de esta tesis es desarrollar métodos eficientes para describir la estructura de las poblaciones a partir de estos datos genómicos, algo clave para la conservación de especies.",
 
     slide2Label: "Parte 2",
     slide2Title: "Contexto del problema",
