@@ -277,10 +277,10 @@ body {
 .thesis-title {
   margin: 0;
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.15;
 
-  /* 👇 fluido: móvil pequeño -> desktop */
-  font-size: clamp(1.05rem, 4.2vw, 1.55rem);
+  /* 👇 título un poco más pequeño */
+  font-size: clamp(1.00rem, 3.8vw, 1.45rem);
   text-wrap: balance;
 }
 
@@ -293,17 +293,16 @@ body {
 .thesis-supervisors {
   margin: 0;
   max-width: 100%;
-  opacity: 0.85;
-  line-height: 1.12;
+  opacity: 0.9;
+  line-height: 1.18;
 
-  font-size: clamp(0.70rem, 2.7vw, 0.90rem);
+  /* 👇 subtítulo claramente más grande */
+  font-size: clamp(0.85rem, 3.2vw, 1.05rem);
   text-wrap: balance;
   overflow-wrap: anywhere;
 
-  /* opcional pero recomendado: no dejes que se coma el marco */
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  /* hasta 3 líneas en móvil */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
