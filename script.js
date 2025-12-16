@@ -91,8 +91,8 @@ window.addEventListener(
  ****************************************************/
 const translations = {
   en: {
-    headerTitle: "Demographic Inference in Structured Populations",
-    headerSubtitle: "Coupling sequential Markovian coalescent and Deep Learning",
+    headerTitle: "",
+    headerSubtitle: "",
     headerHint: "Swipe up to continue",
 
     slide1Label: "Part 1",

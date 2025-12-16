@@ -242,9 +242,8 @@ body {
 .thesis-frame {
   width: min(92vw, 760px);
   /* 👈 en móvil casi todo el ancho */
-  aspect-ratio: 3 / 2;
-
-  background-image: url("images/marco.png");
+  aspect-ratio: 3 / 2.5;
+  background-image: url("images/marco_letra.PNG");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,7 +255,6 @@ body {
   margin: 0 auto 1rem;
 
   transform: translateY(-10px);
-  /* más suave para móvil */
 }
 
 .thesis-frame__content {
@@ -280,7 +278,7 @@ body {
   line-height: 1.15;
 
   /* 👇 título un poco más pequeño */
-  font-size: clamp(1.00rem, 3.8vw, 1.45rem);
+  font-size: clamp(0.85rem, 2.5vw, 1.25rem);
   text-wrap: balance;
 }
 
@@ -297,7 +295,7 @@ body {
   line-height: 1.18;
 
   /* 👇 subtítulo claramente más grande */
-  font-size: clamp(0.85rem, 3.2vw, 1.05rem);
+  font-size: clamp(0.95rem, 3.5vw, 1.20rem);
   text-wrap: balance;
   overflow-wrap: anywhere;
 
