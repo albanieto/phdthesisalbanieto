@@ -159,8 +159,13 @@ const translations = {
     labelEmail: "Your email",
     labelPregunta: "Question",
     submitButton: "Send question",
-    questionsNote: "Your question will be securely emailed to the PhD candidate."
+    questionsNote: "Your question will be securely emailed to the PhD candidate.",
+
+
+    nextSlideHint: "Swipe up to see the credits",
+
   },
+
 
   es: {
     headerTitle: "",
@@ -232,7 +237,10 @@ const translations = {
     labelEmail: "Tu correo",
     labelPregunta: "Pregunta",
     submitButton: "Enviar pregunta",
-    questionsNote: "Tu pregunta se enviará de forma segura a la doctoranda."
+    questionsNote: "Tu pregunta se enviará de forma segura a la doctoranda.",
+
+    nextSlideHint: "Desliza hacia arriba para ver los créditos",
+
   },
 
   fr: {
@@ -305,7 +313,10 @@ const translations = {
     labelPregunta: "Question",
     submitButton: "Envoyer la question",
     questionsNote:
-      "Votre question sera envoyée en toute sécurité à la doctorante."
+      "Votre question sera envoyée en toute sécurité à la doctorante.",
+
+    nextSlideHint: "Glissez vers le haut pour voir les crédits",
+
   }
 };
 
@@ -369,7 +380,9 @@ function applyLanguage(lang) {
     labelPregunta: "labelPregunta",
 
     submitButton: "submitButton",
-    questionsNote: "questionsNote"
+    questionsNote: "questionsNote",
+    nextSlideHint: "nextSlideHint",
+
   };
 
   Object.keys(map).forEach((key) => {
