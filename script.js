@@ -143,10 +143,13 @@ const translations = {
     slide8Text:
       "We propose an artificial intelligence–based method to detect population structure using whole genomes. This approach makes it possible to reuse already trained models and greatly reduce computational cost.\n\nOverall, this work presents a more efficient way to study population history and organisation from DNA data.",
 
+    // CREDITS – SLIDE 9
     slide9Label: "",
     slide9Title: "",
     slide9Text:
-      "Developed with ❤️ by David Palacín Giménez.\n\nContact me at palacingimenezdavid.fpllefia@gmail.com or on LinkedIn: https://www.linkedin.com/in/david-palacin-gimenez/",
+      'Developed with ❤️ by David Palacín Giménez.<br><br>' +
+      'Contact me at <a href="mailto:palacingimenezdavid.fpllefia@gmail.com">palacingimenezdavid.fpllefia@gmail.com</a>' +
+      ' or on LinkedIn: <a href="https://www.linkedin.com/in/david-palacin-gimenez/" target="_blank" rel="noopener noreferrer">David Palacín Giménez</a>',
 
     // QUESTIONS
     questionsLabel: "Questions",
@@ -212,10 +215,13 @@ const translations = {
     slide8Text:
       "En esta tesis se propone un método basado en inteligencia artificial para detectar estructura poblacional a partir de genomas completos. Este enfoque permite reutilizar modelos ya entrenados y reducir de forma considerable el coste computacional.\n\nEn conjunto, este trabajo muestra una manera más eficiente de estudiar la historia y organización de las poblaciones a partir del ADN.",
 
+    // CRÉDITOS – SLIDE 9
     slide9Label: "",
     slide9Title: "",
     slide9Text:
-      "Desarrollado con ❤️ por David Palacín Giménez.\n\nContáctame en palacingimenezdavid.fpllefia@gmail.com o en LinkedIn: https://www.linkedin.com/in/david-palacin-gimenez/",
+      'Desarrollado con ❤️ por David Palacín Giménez.<br><br>' +
+      'Contáctame en <a href="mailto:palacingimenezdavid.fpllefia@gmail.com">palacingimenezdavid.fpllefia@gmail.com</a>' +
+      ' o en LinkedIn: <a href="https://www.linkedin.com/in/david-palacin-gimenez/" target="_blank" rel="noopener noreferrer">David Palacín Giménez</a>',
 
     // PREGUNTAS
     questionsLabel: "Preguntas",
@@ -282,10 +288,13 @@ const translations = {
     slide8Text:
       "Nous proposons une méthode basée sur l’intelligence artificielle pour détecter la structure des populations à partir de génomes complets. Cette approche permet de réutiliser des modèles déjà entraînés et de réduire fortement le coût computationnel.\n\nDans l’ensemble, ce travail présente une manière plus efficace d’étudier l’histoire et l’organisation des populations à partir de l’ADN.",
 
+    // CRÉDITS – SLIDE 9
     slide9Label: "",
     slide9Title: "",
     slide9Text:
-      "Développé avec ❤️ par David Palacín Giménez.\n\nContactez-moi à palacingimenezdavid.fpllefia@gmail.com ou sur LinkedIn : https://www.linkedin.com/in/david-palacin-gimenez/",
+      'Développé avec ❤️ par David Palacín Giménez.<br><br>' +
+      'Contactez-moi à <a href="mailto:palacingimenezdavid.fpllefia@gmail.com">palacingimenezdavid.fpllefia@gmail.com</a>' +
+      ' ou sur LinkedIn : <a href="https://www.linkedin.com/in/david-palacin-gimenez/" target="_blank" rel="noopener noreferrer">David Palacín Giménez</a>',
 
     // QUESTIONS
     questionsLabel: "Questions",
@@ -365,7 +374,11 @@ function applyLanguage(lang) {
 
   Object.keys(map).forEach((key) => {
     const element = document.getElementById(map[key]);
-    if (element) element.textContent = t[key];
+
+    if (element) {
+      element.innerHTML = translations[lang][key].replace(/\n/g, "<br>");
+    }
+
   });
 }
 
