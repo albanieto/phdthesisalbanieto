@@ -116,7 +116,20 @@ const translations = {
     // CHAPTER 1 – SLIDE 4 (no title)
     slide4Label: "",
     slide4Title: "",
-    slide4Text: "The issue is that this group structure can create DNA patterns that look very similar to what we would expect after a recent population decline. In this chapter, we show that when structure exists, some inferred size changes can be artefacts. If this is ignored, it is easy to draw incorrect conclusions about the populations history and current status.",
+    slide4Text:
+      "The issue is that this group structure can create DNA patterns that look very similar to what we would expect after a recent population decline. In this chapter, we show that when structure exists, some inferred size changes can be artefacts. If this is ignored, it is easy to draw incorrect conclusions about the population’s history and current status.",
+
+    // CHAPTER 2 – SLIDE 5
+    slide5Label: "",
+    slide5Title: "Chapter 2",
+    slide5Text:
+      "Ideally, we should take into account how a population is organised when we try to reconstruct its history from DNA. The problem is that describing this organisation in detail requires a huge number of computations and a high computational cost.\n\nIn this study, we propose a different solution based on artificial intelligence. Starting from genealogical trees obtained from DNA, we build a matrix that summarises their information.",
+
+    // CHAPTER 2 – SLIDE 6 (no title)
+    slide6Label: "",
+    slide6Title: "",
+    slide6Text:
+      "We treat this matrix like an image and analyse it using an existing image-recognition system. This approach greatly simplifies the process, saving computing time, energy, and CO₂ emissions.\n\nSurprisingly, a system trained to tell a dog from a cat can also learn to detect complex genetic patterns. Thanks to this, we can identify whether a population is isolated or whether there are migration routes between populations, without explicitly modelling all the complexity of the evolutionary process.",
 
     // QUESTIONS
     questionsLabel: "Questions",
@@ -157,6 +170,18 @@ const translations = {
     slide4Title: "",
     slide4Text:
       "El problema es que esa separación en grupos puede producir señales en el ADN muy parecidas a las que veríamos si la población hubiera disminuido recientemente. En este capítulo mostramos que, cuando existe esta división, algunos cambios de tamaño reconstruidos pueden ser artefactos. Si no se tiene en cuenta, es fácil sacar conclusiones equivocadas sobre la historia y el estado actual de la población.",
+
+    // CAPÍTULO 2 – SLIDE 5
+    slide5Label: "",
+    slide5Title: "Capítulo 2",
+    slide5Text:
+      "Lo ideal sería tener en cuenta cómo está organizada una población cuando intentamos reconstruir su historia a partir del ADN. El problema es que describir esta organización con detalle requiere muchísimos cálculos y un gran coste computacional.\n\nEn este estudio proponemos una solución distinta basada en inteligencia artificial. A partir de los árboles genealógicos que se obtienen del ADN, construimos una matriz que resume su información.",
+
+    // CAPÍTULO 2 – SLIDE 6 (sin título)
+    slide6Label: "",
+    slide6Title: "",
+    slide6Text:
+      "Tratamos esa matriz como si fuera una imagen y la analizamos con un sistema de reconocimiento de imágenes ya existente. Este enfoque simplifica mucho el proceso y ahorra tiempo de cálculo, energía y emisiones de CO₂.\n\nDe forma sorprendente, un sistema entrenado para distinguir un perro de un gato también puede aprender a detectar patrones genéticos complejos. Gracias a ello, es posible identificar si una población está aislada o si existen rutas de migración entre poblaciones, sin necesidad de modelar explícitamente toda la complejidad del proceso evolutivo.",
 
     // PREGUNTAS
     questionsLabel: "Preguntas",
@@ -199,6 +224,18 @@ const translations = {
     slide4Text:
       "Le problème est que cette organisation en groupes peut produire dans l’ADN des signaux très proches de ceux attendus après une diminution récente de la population. Dans ce chapitre, nous montrons que, lorsqu’il existe une structure, certains changements de taille reconstruits peuvent être des artefacts. Si on ne le sait pas, on peut facilement tirer de mauvaises conclusions sur l’histoire et l’état actuel de la population.",
 
+    // CHAPITRE 2 – SLIDE 5
+    slide5Label: "",
+    slide5Title: "Chapitre 2",
+    slide5Text:
+      "Idéalement, il faudrait tenir compte de la manière dont une population est organisée lorsque l’on tente de reconstituer son histoire à partir de l’ADN. Le problème est que décrire cette organisation en détail demande énormément de calculs et un coût informatique très élevé.\n\nDans cette étude, nous proposons une solution différente basée sur l’intelligence artificielle. À partir des arbres généalogiques obtenus depuis l’ADN, nous construisons une matrice qui en résume l’information.",
+
+    // CHAPITRE 2 – SLIDE 6 (sans titre)
+    slide6Label: "",
+    slide6Title: "",
+    slide6Text:
+      "Nous traitons cette matrice comme une image et nous l’analysons avec un système de reconnaissance d’images déjà existant. Cette approche simplifie fortement le processus et permet d’économiser du temps de calcul, de l’énergie et des émissions de CO₂.\n\nDe façon surprenante, un système entraîné à distinguer un chien d’un chat peut aussi apprendre à détecter des motifs génétiques complexes. Grâce à cela, on peut identifier si une population est isolée ou s’il existe des routes de migration entre populations, sans modéliser explicitement toute la complexité du processus évolutif.",
+
     // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Vous avez des questions ?",
@@ -211,6 +248,7 @@ const translations = {
       "Votre question sera envoyée en toute sécurité à la doctorante."
   }
 };
+
 
 
 
@@ -243,9 +281,14 @@ function applyLanguage(lang) {
     slide4Title: "slide4Title",
     slide4Text: "slide4Text",
 
-    slide3Label: "slide5Label",
-    slide3Title: "slide5Title",
-    slide3Text: "slide5Text",
+    slide5Label: "slide5Label",
+    slide5Title: "slide5Title",
+    slide5Text: "slide5Text",
+
+    slide6Label: "slide6Label",
+    slide6Title: "slide6Title",
+    slide6Text: "slide6Text",
+
 
     questionsLabel: "questionsLabel",
     questionsTitle: "questionsTitle",
