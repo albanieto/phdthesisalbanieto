@@ -167,6 +167,10 @@ body {
   gap: 0.9rem;
 }
 
+.questions-slide .slide-content {
+  padding-bottom: 3rem;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
