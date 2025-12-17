@@ -131,12 +131,24 @@ const translations = {
     slide6Text:
       "We treat this matrix like an image and analyse it using an existing image-recognition system. This approach greatly simplifies the process, saving computing time, energy, and CO₂ emissions.\n\nSurprisingly, a system trained to tell a dog from a cat can also learn to detect complex genetic patterns. Thanks to this, we can identify whether a population is isolated or whether there are migration routes between populations, without explicitly modelling all the complexity of the evolutionary process.",
 
+    // CONCLUSION – SLIDE 7
+    slide7Label: "",
+    slide7Title: "Conclusion",
+    slide7Text:
+      "This thesis studies how SMC methods behave when populations are not fully mixed and show internal structure. We find that methods such as PSMC and SMC++ can produce different results depending on how the population is organised.\n\nWe also identify effects caused by population structure that may look like errors, but can actually provide useful information when analysing real data.",
+
+    // CONCLUSION – SLIDE 8 (no title)
+    slide8Label: "",
+    slide8Title: "",
+    slide8Text:
+      "We propose an artificial intelligence–based method to detect population structure using whole genomes. This approach makes it possible to reuse already trained models and greatly reduce computational cost.\n\nOverall, this work presents a more efficient way to study population history and organisation from DNA data.",
+
     // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Do you have any questions?",
     questionsIntro: "Send your questions using this form.",
     labelNombre: "Your name (optional)",
-    labelEmail: "Your email (optional)",
+    labelEmail: "Your email",
     labelPregunta: "Question",
     submitButton: "Send question",
     questionsNote: "Your question will be securely emailed to the PhD candidate."
@@ -183,13 +195,25 @@ const translations = {
     slide6Text:
       "Tratamos esa matriz como si fuera una imagen y la analizamos con un sistema de reconocimiento de imágenes ya existente. Este enfoque simplifica mucho el proceso y ahorra tiempo de cálculo, energía y emisiones de CO₂.\n\nDe forma sorprendente, un sistema entrenado para distinguir un perro de un gato también puede aprender a detectar patrones genéticos complejos. Gracias a ello, es posible identificar si una población está aislada o si existen rutas de migración entre poblaciones, sin necesidad de modelar explícitamente toda la complejidad del proceso evolutivo.",
 
+    // CONCLUSIÓN – SLIDE 7
+    slide7Label: "",
+    slide7Title: "Conclusión",
+    slide7Text:
+      "Se ha estudiado cómo funcionan los métodos SMC cuando las poblaciones no están completamente mezcladas y presentan estructura. Se ha observado que métodos como PSMC y SMC++ pueden dar resultados distintos dependiendo de cómo esté organizada la población.\n\nAdemás, se han identificado efectos causados por la estructura poblacional que pueden parecer errores, pero que en realidad pueden aportar información útil cuando se analizan datos reales.",
+
+    // CONCLUSIÓN – SLIDE 8 (sin título)
+    slide8Label: "",
+    slide8Title: "",
+    slide8Text:
+      "En esta tesis se propone un método basado en inteligencia artificial para detectar estructura poblacional a partir de genomas completos. Este enfoque permite reutilizar modelos ya entrenados y reducir de forma considerable el coste computacional.\n\nEn conjunto, este trabajo muestra una manera más eficiente de estudiar la historia y organización de las poblaciones a partir del ADN.",
+
     // PREGUNTAS
     questionsLabel: "Preguntas",
     questionsTitle: "¿Tienes alguna pregunta?",
     questionsIntro:
       "Puedes enviar aquí tus preguntas sobre la tesis. Se enviarán automáticamente por correo.",
     labelNombre: "Tu nombre (opcional)",
-    labelEmail: "Tu correo (opcional)",
+    labelEmail: "Tu correo",
     labelPregunta: "Pregunta",
     submitButton: "Enviar pregunta",
     questionsNote: "Tu pregunta se enviará de forma segura a la doctoranda."
@@ -236,12 +260,24 @@ const translations = {
     slide6Text:
       "Nous traitons cette matrice comme une image et nous l’analysons avec un système de reconnaissance d’images déjà existant. Cette approche simplifie fortement le processus et permet d’économiser du temps de calcul, de l’énergie et des émissions de CO₂.\n\nDe façon surprenante, un système entraîné à distinguer un chien d’un chat peut aussi apprendre à détecter des motifs génétiques complexes. Grâce à cela, on peut identifier si une population est isolée ou s’il existe des routes de migration entre populations, sans modéliser explicitement toute la complexité du processus évolutif.",
 
+    // CONCLUSION – SLIDE 7
+    slide7Label: "",
+    slide7Title: "Conclusion",
+    slide7Text:
+      "Cette thèse étudie le fonctionnement des méthodes SMC lorsque les populations ne sont pas complètement mélangées et présentent une structure interne. Nous montrons que des méthodes comme PSMC et SMC++ peuvent produire des résultats différents selon l’organisation de la population.\n\nNous identifions également des effets liés à la structure des populations qui peuvent sembler être des erreurs, mais qui peuvent fournir des informations utiles lors de l’analyse de données réelles.",
+
+    // CONCLUSION – SLIDE 8 (sans titre)
+    slide8Label: "",
+    slide8Title: "",
+    slide8Text:
+      "Nous proposons une méthode basée sur l’intelligence artificielle pour détecter la structure des populations à partir de génomes complets. Cette approche permet de réutiliser des modèles déjà entraînés et de réduire fortement le coût computationnel.\n\nDans l’ensemble, ce travail présente une manière plus efficace d’étudier l’histoire et l’organisation des populations à partir de l’ADN.",
+
     // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Vous avez des questions ?",
     questionsIntro: "Envoyez vos questions via ce formulaire.",
     labelNombre: "Votre nom (optionnel)",
-    labelEmail: "Votre e-mail (optionnel)",
+    labelEmail: "Votre e-mail",
     labelPregunta: "Question",
     submitButton: "Envoyer la question",
     questionsNote:
@@ -289,6 +325,13 @@ function applyLanguage(lang) {
     slide6Title: "slide6Title",
     slide6Text: "slide6Text",
 
+    slide7Label: "slide7Label",
+    slide7Title: "slide7Title",
+    slide7Text: "slide7Text",
+
+    slide8Label: "slide8Label",
+    slide8Title: "slide8Title",
+    slide8Text: "slide8Text",
 
     questionsLabel: "questionsLabel",
     questionsTitle: "questionsTitle",
@@ -347,6 +390,11 @@ if (questionsForm) {
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const pregunta = document.getElementById("pregunta").value.trim();
+
+    if (!email) {
+      alert("Por favor, introduce tu correo electrónico.");
+      return;
+    }
 
     if (!pregunta) {
       alert("Por favor, escribe una pregunta antes de enviar.");
