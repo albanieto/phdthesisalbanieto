@@ -95,18 +95,25 @@ const translations = {
     headerSubtitle: "",
     headerHint: "Swipe up to continue",
 
-    slide1Label: "Part 1",
+    // INTRO – SLIDE 1
+    slide1Label: "",
     slide1Title: "Introduction",
-    slide1Text: "Here goes the simple English summary of the introduction.",
+    slide1Text:
+      "Population genetics aims to understand why populations have the genetic characteristics we observe today. By studying DNA from different individuals and using statistical models, it is possible to reconstruct what happened in the past, such as changes in population size, migrations, or periods of isolation.",
 
-    slide2Label: "Part 2",
-    slide2Title: "Problem background",
-    slide2Text: "English summary of the second part of the presentation.",
+    // INTRO – SLIDE 2 (continuation, no title)
+    slide2Label: "",
+    slide2Title: "",
+    slide2Text:
+      "Each individual has two copies of their DNA, inherited from their parents. Small differences between these copies contain information about the population’s history. By tracing these differences back in time, we can reconstruct how individuals are related to each other.\n\nThe goal of this thesis is to develop methods to determine whether populations are well connected or, on the contrary, isolated. This is especially important to understand species evolution and to support conservation.",
 
-    slide3Label: "Part 3",
-    slide3Title: "Main results",
-    slide3Text: "Short summary of the main results.",
+    // SLIDE 3 – CHAPTER 1
+    slide3Label: "",
+    slide3Title: "Chapter 1",
+    slide3Text:
+      "Many methods that reconstruct a population’s history from DNA assume that everyone mixes equally, as if the population were one homogeneous group. In nature, however, populations are often split into groups or partially isolated subpopulations.\n\nThe issue is that this group structure can create DNA patterns that look very similar to what we would expect after a recent population decline. In this chapter, we show that when structure exists, some inferred size changes can be artefacts. If this is ignored, it is easy to draw incorrect conclusions about the population’s history and current status.",
 
+    // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Do you have any questions?",
     questionsIntro: "Send your questions using this form.",
@@ -122,18 +129,25 @@ const translations = {
     headerSubtitle: "",
     headerHint: "Desliza hacia arriba para continuar",
 
-    slide1Label: "Parte 1",
+    // INTRO – SLIDE 1
+    slide1Label: "",
     slide1Title: "Introducción",
-    slide1Text: "La genética de poblaciones busca entender por qué las poblaciones tienen hoy las características genéticas que observamos. Para ello estudia el ADN de distintos individuos y utiliza modelos estadísticos para reconstruir lo que ocurrió en el pasado, como cambios en el tamaño de la población, migraciones o periodos de aislamiento. Cada persona o individuo tiene dos copias de su ADN, heredadas de sus progenitores.Las pequeñas diferencias entre estas copias contienen información sobre la historia de la población.Siguiendo estas diferencias hacia atrás en el tiempo, es posible reconstruir cómo los individuos están relacionados entre sí. El objetivo de esta tesis es desarrollar métodos que permitan saber si las poblaciones están bien conectadas entre ellas o, por el contrario, aisladas.Esta información es especialmente importante para entender la evolución de las especies y para su conservación.",
+    slide1Text:
+      "La genética de poblaciones busca entender por qué las poblaciones tienen hoy las características genéticas que observamos. Para ello estudia el ADN de distintos individuos y utiliza modelos estadísticos para reconstruir lo que ocurrió en el pasado, como cambios en el tamaño de la población, migraciones o periodos de aislamiento.",
 
-    slide2Label: "Parte 2",
-    slide2Title: "Contexto del problema",
-    slide2Text: "Aquí va el resumen de la segunda parte de la presentación.",
+    // INTRO – SLIDE 2 (continuación, sin título)
+    slide2Label: "",
+    slide2Title: "",
+    slide2Text:
+      "Cada persona o individuo tiene dos copias de su ADN, heredadas de sus progenitores. Las pequeñas diferencias entre estas copias contienen información sobre la historia de la población. Siguiendo estas diferencias hacia atrás en el tiempo, es posible reconstruir cómo los individuos están relacionados entre sí.\n\nEl objetivo de esta tesis es desarrollar métodos que permitan saber si las poblaciones están bien conectadas entre ellas o, por el contrario, aisladas. Esta información es especialmente importante para entender la evolución de las especies y para su conservación.",
 
-    slide3Label: "Parte 3",
-    slide3Title: "Resultados",
-    slide3Text: "Aquí puedes poner un resumen sencillo de los resultados.",
+    // SLIDE 3 – CAPÍTULO 1
+    slide3Label: "",
+    slide3Title: "Capítulo 1",
+    slide3Text:
+      "Muchos métodos para reconstruir la historia de una población con ADN asumen que todos los individuos se mezclan por igual, como si fuera una única población homogénea. Sin embargo, en la naturaleza suele haber grupos o subpoblaciones parcialmente aisladas.\n\nEl problema es que esa separación en grupos puede producir señales en el ADN muy parecidas a las que veríamos si la población hubiera disminuido recientemente. En este capítulo mostramos que, cuando existe esta división, algunos cambios de tamaño reconstruidos pueden ser artefactos. Si no se tiene en cuenta, es fácil sacar conclusiones equivocadas sobre la historia y el estado actual de la población.",
 
+    // PREGUNTAS
     questionsLabel: "Preguntas",
     questionsTitle: "¿Tienes alguna pregunta?",
     questionsIntro:
@@ -150,18 +164,25 @@ const translations = {
     headerSubtitle: "",
     headerHint: "Glissez vers le haut pour continuer",
 
-    slide1Label: "Partie 1",
+    // INTRO – SLIDE 1
+    slide1Label: "",
     slide1Title: "Introduction",
-    slide1Text: "Résumé français simple de l'introduction.",
+    slide1Text:
+      "La génétique des populations cherche à comprendre pourquoi les populations présentent aujourd’hui les caractéristiques génétiques que nous observons. En étudiant l’ADN de différents individus et à l’aide de modèles statistiques, il est possible de reconstituer ce qui s’est passé dans le passé, comme des changements de taille de population, des migrations ou des périodes d’isolement.",
 
-    slide2Label: "Partie 2",
-    slide2Title: "Contexte du problème",
-    slide2Text: "Résumé français de la deuxième partie de la présentation.",
+    // INTRO – SLIDE 2 (suite, sans titre)
+    slide2Label: "",
+    slide2Title: "",
+    slide2Text:
+      "Chaque individu possède deux copies de son ADN, héritées de ses parents. De petites différences entre ces copies contiennent des informations sur l’histoire de la population. En remontant ces différences dans le temps, on peut comprendre comment les individus sont liés entre eux.\n\nL’objectif de cette thèse est de développer des méthodes permettant de savoir si les populations sont bien connectées entre elles ou, au contraire, isolées. Ces informations sont particulièrement importantes pour comprendre l’évolution des espèces et pour leur conservation.",
 
-    slide3Label: "Partie 3",
-    slide3Title: "Résultats principaux",
-    slide3Text: "Résumé court des résultats principaux.",
+    // SLIDE 3 – CHAPITRE 1
+    slide3Label: "",
+    slide3Title: "Chapitre 1",
+    slide3Text:
+      "De nombreuses méthodes qui reconstruisent l’histoire d’une population à partir de l’ADN supposent que tous les individus se mélangent de la même façon, comme si la population était un groupe homogène. Or, dans la nature, il existe souvent des groupes ou des sous-populations partiellement isolées.\n\nLe problème est que cette organisation en groupes peut produire dans l’ADN des signaux très proches de ceux attendus après une diminution récente de la population. Dans ce chapitre, nous montrons que, lorsqu’il existe une structure, certains changements de taille reconstruits peuvent être des artefacts. Si on ne le sait pas, on peut facilement tirer de mauvaises conclusions sur l’histoire et l’état actuel de la population.",
 
+    // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Vous avez des questions ?",
     questionsIntro: "Envoyez vos questions via ce formulaire.",
@@ -173,6 +194,8 @@ const translations = {
       "Votre question sera envoyée en toute sécurité à la doctorante."
   }
 };
+
+
 
 /****************************************************
  * FUNCIÓN PARA APLICAR IDIOMA
@@ -188,6 +211,7 @@ function applyLanguage(lang) {
     slide1Label: "slide1Label",
     slide1Title: "slide1Title",
     slide1Text: "slide1Text",
+
 
     slide2Label: "slide2Label",
     slide2Title: "slide2Title",

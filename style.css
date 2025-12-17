@@ -30,6 +30,9 @@ body {
   transition: transform 0.6s ease-in-out;
 }
 
+.slide-title:empty {
+  display: none;
+}
 /* ===== CADA SLIDE: PANTALLA COMPLETA ===== */
 .slide {
   min-height: 100vh;
