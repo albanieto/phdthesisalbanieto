@@ -143,6 +143,11 @@ const translations = {
     slide8Text:
       "We propose an artificial intelligence–based method to detect population structure using whole genomes. This approach makes it possible to reuse already trained models and greatly reduce computational cost.\n\nOverall, this work presents a more efficient way to study population history and organisation from DNA data.",
 
+    slide9Label: "",
+    slide9Title: "",
+    slide9Text:
+      "Developed with ❤️ by David Palacín Giménez.\n\nContact me at palacingimenezdavid.fpllefia@gmail.com or on LinkedIn: https://www.linkedin.com/in/david-palacin-gimenez/",
+
     // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Do you have any questions?",
@@ -206,6 +211,11 @@ const translations = {
     slide8Title: "",
     slide8Text:
       "En esta tesis se propone un método basado en inteligencia artificial para detectar estructura poblacional a partir de genomas completos. Este enfoque permite reutilizar modelos ya entrenados y reducir de forma considerable el coste computacional.\n\nEn conjunto, este trabajo muestra una manera más eficiente de estudiar la historia y organización de las poblaciones a partir del ADN.",
+
+    slide9Label: "",
+    slide9Title: "",
+    slide9Text:
+      "Desarrollado con ❤️ por David Palacín Giménez.\n\nContáctame en palacingimenezdavid.fpllefia@gmail.com o en LinkedIn: https://www.linkedin.com/in/david-palacin-gimenez/",
 
     // PREGUNTAS
     questionsLabel: "Preguntas",
@@ -272,6 +282,11 @@ const translations = {
     slide8Text:
       "Nous proposons une méthode basée sur l’intelligence artificielle pour détecter la structure des populations à partir de génomes complets. Cette approche permet de réutiliser des modèles déjà entraînés et de réduire fortement le coût computationnel.\n\nDans l’ensemble, ce travail présente une manière plus efficace d’étudier l’histoire et l’organisation des populations à partir de l’ADN.",
 
+    slide9Label: "",
+    slide9Title: "",
+    slide9Text:
+      "Développé avec ❤️ par David Palacín Giménez.\n\nContactez-moi à palacingimenezdavid.fpllefia@gmail.com ou sur LinkedIn : https://www.linkedin.com/in/david-palacin-gimenez/",
+
     // QUESTIONS
     questionsLabel: "Questions",
     questionsTitle: "Vous avez des questions ?",
@@ -332,6 +347,9 @@ function applyLanguage(lang) {
     slide8Label: "slide8Label",
     slide8Title: "slide8Title",
     slide8Text: "slide8Text",
+
+    slide9Text: "slide9Text",
+
 
     questionsLabel: "questionsLabel",
     questionsTitle: "questionsTitle",

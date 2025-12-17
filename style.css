@@ -313,6 +313,18 @@ body {
   text-align: center;
 }
 
+.credits-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.credits-text a {
+  color: #e9d5ff;
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .thesis-frame {
     max-width: 90%;
